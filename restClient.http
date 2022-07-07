@@ -1,0 +1,11 @@
+# post https://62bfe35ec134cf51cec58701.mockapi.io/api/crud/ HTTP/1.1
+# content-type: application/json
+# {
+#     "username": "testpanel",
+#     "password": "test123"
+# }
+###
+
+
+
+get https://62bfe35ec134cf51cec58701.mockapi.io/api/crud/users 

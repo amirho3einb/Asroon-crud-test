@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoImage {
+  width: 125px;
+  height: auto;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoImage img {
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.titleBar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.titleBar .titleHead {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.btn {
+  background-color: #de2d26;
+  border-radius: 4px;
+  width: 159px;
+  height: 32px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  border: none;
+  outline: none;
 }
-
-.App-link {
-  color: #61dafb;
+.btn a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 14px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.btn span {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: iranyekan;
+}
+.btn .addIcon {
+  width: 25px;
+  height: 25px;
+}
+.trashIcon,
+.editIcon,
+.closeIcon {
+  width: 25px;
+  height: 25px;
+}
+.editIcon {
+  color: #666464;
+}
+.trashIcon {
+  color: #de2d26;
+}
+.usersList {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: right;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.usersList th {
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #666464;
+}
+.usersList td {
+  background-color: #fff;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666464;
+}
+.usersList td > button,
+.usersList td > a > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.form {
+  background-color: #fff;
+  border: 1px solid rgba(219, 219, 219, 0.4);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  max-width: 432px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.form > .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e1b1b;
+}
+.formControl {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+}
+.formControl label {
+  font-weight: 400;
+  font-size: 10px;
+  color: #666464;
+  opacity: 0.68;
+}
+.formControl input {
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 15px;
+  color: rgb(102, 100, 100, 0.68);
+}
+.formError {
+  font-size: 11px;
+  color: #de2d26;
+}
+.form button {
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #de2d26;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  font-family: iranYekan;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
   }
 }
